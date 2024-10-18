@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sipermawa - UPI</title>
+
+    <!-- icon link -->
+    <link rel="icon" href="../assets/Logo_Almamater_UPI.svg">
+
+    <!-- styles link -->
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- navigation bar ( start ) -->
+
+    <nav class="navbar navbar-expand-lg shadow fixed flex" style="background-color: transparent;">
+        <div class="container-fluid m-4">
+            <a class="navbar-brand fw-bold" href="#" id="univ"> Sipermawa - UPI</a>
+            <script>
+                document.getElementById('univ').addEventListener('click', () => {
+                    window.location.href = "../index.html";
+                })
+            </script>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pengajuan</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../pengajuan-sign-seminar-proposal-skripsi/index.html" class="dropdown-item">Pengajuan Tanda Tangan Seminar Proposal Skripsi</a>
+                            </li>
+                            <li>
+                                <a href="../pengajuan-sign-surat-penelitian/index.html" class="dropdown-item">Pengajuan Tanda Tangan Dan Surat Penelitian Dan Kegiatan Akademik</a>
+                            </li>
+                            <li>
+                                <a href="../pengajuan-peminjaman-peralatan-akademik/index.html" class="dropdown-item">Pengajuan Surat Peminjaman Peralatan Kebutuhan Akademik</a>
+                            </li>
+                            <li>
+                                <a href="../pengajuan-pengesahan-skripsi/index.html" class="dropdown-item">Pengajuan Tanda Tangan Untuk Lembar Pengesahan Skripsi</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Pengajuan MBKM Magang</a>
+                            </li>
+                            <li>
+                                <a href="../pengajuan-sp/index.html" class="dropdown-item">Pengajuan SP</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navigation bar ( end ) -->
+
+    <section>
+        <div class="container">
+            <h1 class="fs-4 text-center mt-5 fw-bold">Pengajuan MBKM / Magang</h1>
+            <p class="text-center">Inputkan Profile Mahasiswa</p>
+            <form class="mt-5" action="https://formspree.io/f/wpkkjqo" method="post">
+                <label for="nama">Nama : </label>
+                <input type="text" name="nama" id="nama" class="form-control" placeholder="Nama Mahasiswa">
+                <label class="mt-3" for="nim">NIM : </label>
+                <input type="number" name="nim" id="nim" class="form-control" placeholder="NIM Mahasiswa">
+                <label class="mt-3" for="keperluan">Keperluan : </label>
+                <input type="text" name="keperluan" id="keperluan" class="form-control" placeholder="Keperluan Mahasiswa">
+                <label class="mt-3" for="judulKegiatan">Judul Kegiatan : </label>
+                <input type="text" name="judulKegiatan" id="judulKegiatan" class="form-control" placeholder="Judul Kegiatan Mahasiswa">
+                <label class="mt-3" for="file">Upload File Draft Usulan : </label>
+                <input type="file" name="file" id="file" class="form-control" placeholder="Upload Draft Usulan">
+                <div class="buttons mt-3">
+                    <button type="submit">Kirim</button>
+                    <button><a href="../index.html">Kembali</a></button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+    <section class="copyright">
+        <div class="container">
+            <p class="text-center mt-5">&copy; All Rights Reserved | Universitas Pendidikan Indonesia</p>
+        </div>
+    </section>
+
+</body>
+
+</html>
